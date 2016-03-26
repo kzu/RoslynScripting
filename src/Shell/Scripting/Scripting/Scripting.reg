@@ -1,0 +1,177 @@
+﻿This file contains information that should be merged into the registry
+from a setup program, or copied into a .reg file and merged into the
+registry for your own personal testing. If you are using a Visual Studio
+Setup Project, then simply copy the file starting below the the "CUT HERE"
+line until the end, and save it to a file with the extension .reg. Then open 
+the Registry editor for your setup program, right click on the Registry editor 
+window, select Import and then browse to the .reg file you have created. All 
+the correct settings have been made and you do not need to make any further 
+modifications. To test these settings on your computer, save the contents of 
+this file to a .reg file like you would for a Setup project, but also search 
+for the value $RootFolder$ and replace it with the directory path containing 
+your program (using double backslashes "\\" as the delimiter). 
+After saving these changes, double-click on the .reg file and merge the changes
+into the registry.
+
+--------------------------------  CUT HERE  --------------------------------
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}]
+@="Scripting DTE Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\LocalServer32]
+@="$RootFolder$\\Scripting.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\ProgID]
+@="Scripting.DTE.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\VersionIndependentProgID]
+@="Scripting.DTE"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\DefaultIcon]
+@="$RootFolder$\\Scripting.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{02e3ff48-6a68-4a0b-aae3-38fcde598d13}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}]
+@="Scripting Solution Object"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\LocalServer32]
+@="$RootFolder$\\Scripting.exe"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\ProgID]
+@="Scripting.Solution.1.0"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\VersionIndependentProgID]
+@="Scripting.Solution"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\Programmable]
+@=""
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\TypeLib]
+@="{80cc9f66-e7d8-4ddd-85b6-d9e6cd0e93e2}"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\DefaultIcon]
+@="$RootFolder$\\Scripting.exe,1200"
+
+[HKEY_CLASSES_ROOT\CLSID\{bb38a283-b147-452f-a389-82eedb4938d0}\Version]
+@="1.0"
+
+[HKEY_CLASSES_ROOT\Scripting.DTE.1.0]
+@="Scripting DTE Object"
+
+[HKEY_CLASSES_ROOT\Scripting.DTE.1.0\CLSID]
+@="{02e3ff48-6a68-4a0b-aae3-38fcde598d13}"
+
+[HKEY_CLASSES_ROOT\Scripting.Solution.1.0]
+@="Scripting Solution Object"
+
+[HKEY_CLASSES_ROOT\Scripting.Solution.1.0\CLSID]
+@="{bb38a283-b147-452f-a389-82eedb4938d0}"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppEnv\14.0\Apps\Scripting_1.0]
+"StubExePath"="$RootFolder$\\Scripting.exe"
+"AppName"="Scripting"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Scripting.exe]
+@="$RootFolder$\\Scripting.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_ENABLE_SCRIPT_PASTE_URLACTION_IF_PROMPT]
+"Scripting.exe"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_LOCALMACHINE_LOCKDOWN]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_RESTRICT_ABOUT_PROTOCOL_IE7]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BLOCK_CROSS_PROTOCOL_FILE_NAVIGATION]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_IFRAME_MAILTO_THRESHOLD]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SCRIPTURL_MITIGATION]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_SHOW_APP_PROTOCOL_WARN_DIALOG]
+"Scripting.exe"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_VIEWLINKEDWEBOC_IS_UNSAFE]
+"Scripting.exe"=dword:00000001
+
+; Uncomment the entries below if you want to register a source file extension to work with Dynamic Data Exchange (DDE)
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe]
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell]
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\Open]
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\Open\ddeexec\Application]
+;@="Scripting.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\Open\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\edit]
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\edit\Command]
+;@="\"$RootFolder$\\Scripting.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\edit\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\edit\ddeexec\Application]
+;@="Scripting.1.0"
+
+;[HKEY_CLASSES_ROOT\Applications\Scripting.exe\shell\edit\ddeexec\Topic]
+;@="system"
+
+;[HKEY_CLASSES_ROOT\.Scripting_ext]
+;@="Scripting.Scripting_ext.1.0"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0]
+;"AlwaysShowExt"="1"
+;@="Scripting Source file"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\DefaultIcon]
+;@="$RootFolder$\\Scripting.exe,1200"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell]
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell\Open]
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell\Open\Command]
+;@="\"$RootFolder$\\Scripting.exe\" /dde"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell\Open\ddeexec]
+;@="Open(\"%1\")"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell\Open\ddeexec\Application]
+;@="Scripting.1.0"
+
+;[HKEY_CLASSES_ROOT\Scripting.Scripting_ext.1.0\shell\Open\ddeexec\Topic]
+;@="system"
+
+; Uncomment the entries below if you want to register your program for participation in Set Default Programs
+; for the file extension defined above.
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\RegisteredApplications]
+;"Scripting.1.0"="SOFTWARE\\Microsoft\\Scripting\\1.0\\Capabilities"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Scripting\1.0\Capabilities]
+;"ApplicationDescription"="Description of Scripting"
+
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Scripting\1.0\Capabilities\FileAssociations]
+;".Scripting_ext"="Scripting.Scripting_ext.1.0"

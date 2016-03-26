@@ -3,6 +3,8 @@ out
 build
 bin
 obj
+Debug
+Release
 packages
 project.lock.json
 *.nuget.props
@@ -10,6 +12,7 @@ project.lock.json
 *.suo
 *.user
 *.cache
+*.sdf
 .vs
 .*
 log.txt
