@@ -1,0 +1,4 @@
+[submodule "external/roslyn"]
+	path = external/roslyn
+	url = C:/Code/oss/roslyn
+	branch = master
